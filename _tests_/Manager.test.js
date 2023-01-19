@@ -35,3 +35,8 @@ test('return managers office number', ()=>{
     const manager= new Manager("heela", 1, "heela@gmail.com", 22)
     expect(manager.getSchool()).toEqual(expect.any(String))
 });
+
+test('return managers role', ()=>{
+    const manager= new Manager("heela", 1, "heela@gmail.com", 22)
+    expect(manager.getRole()).toEqual("Manager")
+});

@@ -35,3 +35,8 @@ test('return interns school', ()=>{
     const intern= new Intern("heela", 1, "heela@gmail.com", "Carleton");
     expect(intern.getSchool()).toEqual("Calreton");
 });
+
+test('return interns role', ()=>{
+    const intern= new Intern("heela", 1, "heela@gmail.com", "Carleton");
+    expect(intern.getRole()).toEqual("Intern");
+});

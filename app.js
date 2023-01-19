@@ -1,12 +1,12 @@
-const inquirer = require('inquirer');
-const Manager = require('./lib/manager');
-const Engineer = require('./lib/engineer');
-const Intern = require('./lib/intern');
-const path = require('path');
-const fs = require('fs');
+import { prompt } from 'inquirer';
+import Manager from './lib/manager';
+import Engineer from './lib/engineer';
+import Intern from './lib/intern';
+import { resolve, join } from 'path';
+import { writeFileSync } from 'fs';
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const OUTPUT_DIR = resolve(__dirname, "output");
+const outputPath = join(OUTPUT_DIR, "team.html");
 
 //array to hold team members
 const teamMembers = [];
@@ -17,7 +17,7 @@ function init() {
 }
 
 function managerPrompt() {
-    inquirer.prompt([
+    prompt([
         {
             type: "input",
             name: "name",
@@ -49,7 +49,7 @@ function managerPrompt() {
 }
 
 function teamMenu (){
-    inquirer.prompt ([
+    prompt ([
         {
             type: 'list',
             name: 'addTeamMemeberPrompt',
@@ -74,7 +74,7 @@ function teamMenu (){
 }
 
 function addEngineer() {
-    inquirer.prompt([
+    prompt([
       
       {
         type: "input",
@@ -108,7 +108,7 @@ function addEngineer() {
 
   }
   function addIntern() {
-    inquirer.prompt([
+    prompt([
       
       {
         type: "input",
@@ -143,7 +143,7 @@ function addEngineer() {
 
 function generateTeam () {
     console.log ("Success!")
-    fs.writeFileSync(outputPath, generateTeam(teamMembers), "utf-8")
+    writeFileSync(outputPath, generateTeam(teamMembers), "utf-8")
 }
 
 generateTeam()

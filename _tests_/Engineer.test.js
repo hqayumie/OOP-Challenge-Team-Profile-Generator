@@ -30,3 +30,13 @@ test('return engineers email', () => {
     const engineer = new Engineer("Heela", 1, "heela@gmail.com")
     expect(engineer.getEmail()).toEqual('heela@gmail.com');
 });
+
+test('return engineers github', () => {
+    const engineer = new Engineer("Heela", 1, "heela@gmail.com", "github123")
+    expect(engineer.getGithub()).toEqual('github123');
+});
+
+test('return engineers role', () => {
+    const engineer = new Engineer("Heela", 1, "heela@gmail.com")
+    expect(engineer.getRole()).toEqual('Engineer');
+});
