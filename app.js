@@ -1,17 +1,17 @@
-import { prompt } from 'inquirer';
-import Manager from './lib/manager';
-import Engineer from './lib/engineer';
-import Intern from './lib/intern';
-import { resolve, join } from 'path';
-import { writeFileSync } from 'fs';
+// import { prompt } from 'inquirer';
+// import Manager from './lib/manager';
+// import Engineer from './lib/engineer';
+// import Intern from './lib/intern';
+// import { resolve, join } from 'path';
+// import { writeFileSync } from 'fs';
 
 //getting error-require-esm with code below.
-// //const inquirer = require('inquirer');
-// const Manager = require('./lib/manager');
-// const Engineer = require('./lib/engineer');
-// const Intern = require('./lib/intern');
-// const path = require('path');
-// const fs = require('fs');
+const inquirer = require('inquirer');
+const Manager = require('./lib/manager');
+const Engineer = require('./lib/engineer');
+const Intern = require('./lib/intern');
+const path = require('path');
+const fs = require('fs');
 
 const OUTPUT_DIR = resolve(__dirname, "output");
 const outputPath = join(OUTPUT_DIR, "team.html");

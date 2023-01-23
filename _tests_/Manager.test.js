@@ -21,7 +21,7 @@ test('return managers name', () => {
 //test for getID()
 test('return managers id', () => {
     const manager = new Manager("Heela", 1, "heela@gmail.com", 22)
-    expect(manager.getID()).toEqual(expect.any(Number))
+    expect(manager.getId()).toEqual(expect.any(Number))
 });
 
 //test for getEmail()
@@ -33,7 +33,7 @@ test('return managers email', () => {
 //test for getOfficeNumber()
 test('return managers office number', ()=>{
     const manager= new Manager("heela", 1, "heela@gmail.com", 22)
-    expect(manager.getSchool()).toEqual(expect.any(String))
+    expect(manager.getOfficeNumber()).toEqual(expect.any(String))
 });
 
 test('return managers role', ()=>{
