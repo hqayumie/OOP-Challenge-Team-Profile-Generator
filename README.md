@@ -11,4 +11,5 @@ Start by running app.js in your terminal and then answer the questions prompted 
 ## Tests
 Run tests: Jest
 
-## <a href= "https://github.com/hqayumie/OOP-Challenge-Team-Profile-Generator/" target="_blank>LINK</a>
+<a href= "https://github.com/hqayumie/OOP-Challenge-Team-Profile-Generator/"  target="_blank">Github Repository</a>  
+ 
