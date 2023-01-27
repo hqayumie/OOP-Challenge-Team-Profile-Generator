@@ -159,7 +159,7 @@ const addEmployee = () => {
     }
   ])
     .then(employeeData => {
-      let { name, employeeID, email, role, github, school, confirmAddmployee } = employeeData;
+      let { name, employeeId, email, role, github, school, confirmAddmployee } = employeeData;
       let employee;
 
       if (role === "Engineer") {
@@ -171,12 +171,12 @@ const addEmployee = () => {
 
         console.log(employee);
       }
-      teamArray.push(employee);
+      teamMembers.push(employee);
 
       if (confirmAddEmployee) {
-        return addEmployee(teamArray);
+        return addEmployee(teamMembers);
       } else {
-        return teamArray;
+        return teamMembers;
       }
     })
 
@@ -189,14 +189,14 @@ const writeFile = data => {
           console.log(err);
           return;
       } else {
-          console.log("Your team profile has been successfully created! Please check out the index.html")
+          console.log("Success! Team has been created")
       }
   })
 }; 
 addManager()
   .then(addEmployee)
   .then(teamArray => {
-    return generateHTML(teamArray);
+    return generateHTML(teamMembers);
   })
   .then(pageHTML => {
     return writeFile(pageHTML);
