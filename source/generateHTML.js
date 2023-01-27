@@ -36,12 +36,12 @@ const createTeam = (team) => {
     <ul class="list-group">
       <li class="list-group-item">ID: ${engineer.id}</li>
       <li class="list-group-item">
-        Email: <a href="mailto:${engineer.email}">${itern.email }</a>
+        Email: <a href="mailto:${engineer.email}">${engineer.email }</a>
       </li>
       <li class="list-group-item">
       GitHub:
       <a
-        href="https://github.com/${enginner.github}"
+        href="https://github.com/${engineer.github}"
         target="_blank"
         rel="noopener noreferrer"
         >${engineer.github}</a
@@ -68,7 +68,7 @@ const internCard = (intern) => {
     <ul class="list-group">
       <li class="list-group-item">ID: ${intern.id}</li>
       <li class="list-group-item">
-        Email: <a href="mailto:${intern.email}">${itern.email }</a>
+        Email: <a href="mailto:${intern.email}">${intern.email }</a>
       </li>
       <li class="list-group-item">School:${school}</li>
     </ul>
