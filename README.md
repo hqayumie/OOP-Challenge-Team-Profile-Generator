@@ -13,3 +13,4 @@ Run tests: Jest
 
 <a href= "https://github.com/hqayumie/OOP-Challenge-Team-Profile-Generator/"  target="_blank">Github Repository</a>  
  
+<a href= "https://drive.google.com/file/d/1q6imld5dH1MW-_JFCuiPuLUgc_JFqxOo/view/" target="_blank"> Screencastify Video Link</a>
