@@ -7,7 +7,7 @@ test("Creates a Manager object", () => {
     expect(manager.name).toEqual(expect.any(String))
     expect(manager.id).toEqual(expect.any(Number))
     expect(manager.email).toEqual(expect.any(String))
-    expect(manager.officeNumber).toEqual(expect.any(String))
+    expect(manager.officeNumber).toEqual(expect.any(Number))
 });
 
 // test for getName()
@@ -33,7 +33,7 @@ test('return managers email', () => {
 //test for getOfficeNumber()
 test('return managers office number', ()=>{
     const manager= new Manager("heela", 1, "heela@gmail.com", 22)
-    expect(manager.getOfficeNumber()).toEqual(expect.any(String))
+    expect(manager.getOfficeNumber()).toEqual(expect.any(Number))
 });
 
 test('return managers role', ()=>{
