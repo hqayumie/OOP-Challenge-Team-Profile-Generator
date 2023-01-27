@@ -159,7 +159,7 @@ const addEmployee = () => {
     }
   ])
     .then(employeeData => {
-      let { name, employeeId, email, role, github, school, confirmAddmployee } = employeeData;
+      let { name, employeeId, email, role, github, school, confirmAddEmployee } = employeeData;
       let employee;
 
       if (role === "Engineer") {
